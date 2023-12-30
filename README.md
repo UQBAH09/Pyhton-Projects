@@ -1,0 +1,1 @@
+"Welcome to this folder—my Python journey, documented from the early days of a beginner to the intricacies of advanced programming. Here lie the scripts and files that capture the evolution of my skills. Join me in exploring the code snippets and lessons learned, each file a step in the ongoing adventure of mastering Python."
