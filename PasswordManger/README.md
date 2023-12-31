@@ -13,3 +13,5 @@ This Python script is a simple password manager that uses SQLite for data storag
 - Python 3.x
 - SQLite3
 - pandas
+
+*NOTE: Enter the location of your database in the variable "db_conn".
