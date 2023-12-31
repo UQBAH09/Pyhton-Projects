@@ -5,7 +5,7 @@ import hashlib
 import time
 
 # Starting connection to a database
-db_conn = "/home/uqbah/Python/PasswordManger/PasswordOraganizer.db"
+db_conn = "/home/uqbah/Python/PasswordManger/PasswordOraganizer.db"    # Write the location, where you want your database to be stored.
 conn = None
 cur = None
 
@@ -16,10 +16,6 @@ try:
 except sqlite3.Error as e:
     # Handling SQLite connection errors
     print(f"SQLite error: \n {e}")
-finally:
-    # Closing the cursor if it exists
-    if cur:
-        cur.close()
 
 # Creating a table to store the master password to access all usernames and passwords.
 cur.execute('''
