@@ -78,11 +78,7 @@ while option != "exit":
 
         keyword = input("Enter keyword to search\n")    # Keyword for searching.
         # Searching for a keyword (variable) in the name column.
-        result_df = df[df["NAME"].str.contains(keyword)]
-        if not result_df.empty:
-            print(result_df)
-        else:
-            print("No record found.")
+        print(df[df["NAME"].str.contains(keyword)])
 
     elif option == "2": # Adding
         time.sleep(1)   # Waiting for a second
@@ -117,12 +113,8 @@ while option != "exit":
         time.sleep(1)   # Waiting for a second
         # Saving all data via pandas for displaying.
         sql = pd.read_sql_query("SELECT * FROM passwords", conn)
-        df = pd.DataFrame(sql, columns=['NAME', 'USERNAME', 'PASSWORD'])
-        if not df.empty():
-            print(df)
-        else:
-            print("NO records found")
-
+        print(pd.DataFrame(sql, columns=['NAME', 'USERNAME', 'PASSWORD']))
+        
     elif option == '5': # Change password.
         time.sleep(1)   # Waiting for a second
         # Deleting the old password.
